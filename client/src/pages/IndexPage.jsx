@@ -15,9 +15,10 @@ export default function IndexPage() {
   const [page, setPage] = useState(1);
   const [maxPageSize, setMaxPageSize] = useState(0);
 
-  const handleSearch = ()=>{
+  const handleSearch = async()=>{
     setPage(1);
     setFlights([]);
+    const res = await axios.post('/mine');
     searchFlights(1);
   }
   const searchFlights = async (page) => {
