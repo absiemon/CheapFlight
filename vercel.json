@@ -5,7 +5,7 @@
     "rewrites": [
         {
             "source": "/api/get_prices?page=(.*)",
-            "destination": "/server/server.js"
+            "destination": "https://cheap-flight.vercel.app/api/get_prices"
         }
     ]
 }
