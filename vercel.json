@@ -4,7 +4,7 @@
     "framework": "vite",
     "rewrites": [
         {
-            "source": "/api/(.*)",
+            "source": "/api/get_prices?page=(.*)",
             "destination": "/server/server.js"
         }
     ]
