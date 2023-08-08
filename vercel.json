@@ -4,8 +4,8 @@
     "framework": "vite",
     "rewrites": [
         {
-            "source": "/api/get_prices?page=(.*)",
-            "destination": "https://cheap-flight.vercel.app/api/get_prices"
+            "source": "/api/(.*)",
+            "destination": "/server/server.js"
         }
     ]
 }
