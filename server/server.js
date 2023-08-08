@@ -30,7 +30,7 @@ const corsOptions = {
 app.use(cors(corsOptions));
 
 
-app.use('/api/', flightPrice);
+app.use('/api', flightPrice);
 
 const port = process.env.PORT || 8000;
 
