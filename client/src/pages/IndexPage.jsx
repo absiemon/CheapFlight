@@ -18,7 +18,6 @@ export default function IndexPage() {
   const handleSearch = async()=>{
     setPage(1);
     setFlights([]);
-    const res = await axios.post('/mine');
     searchFlights(1);
   }
   const searchFlights = async (page) => {
